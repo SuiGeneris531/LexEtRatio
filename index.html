@@ -31,7 +31,37 @@
   .cover-title-sub{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1;color:var(--white);margin-bottom:2rem}
   .cover-divider{width:80px;height:4px;background:var(--gold);margin-bottom:1.5rem}
   .cover-desc{font-size:1rem;color:var(--gray);line-height:1.7;margin-bottom:2.5rem}
-  .credit-name{color:var(--gold);font-weight:700;letter-spacing:1px;}
+  .cover-authors{
+  margin-top:3.2rem;
+  line-height:1.8;
+}
+
+.credit-label{
+  font-size:.72rem;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:var(--gray);
+}
+
+.credit-name{
+  font-size:.95rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:700;
+}
+
+.credit-separator{
+  color:rgba(255,255,255,.35);
+  margin:0 .35rem;
+}
+
+.credit-meta{
+  font-size:.72rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--gray);
+}
   .cover-stats{display:flex;gap:2rem;margin-bottom:3rem}
   .cover-stat-num{font-size:2.5rem;font-weight:900;color:var(--gold);display:block}
   .cover-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
@@ -200,12 +230,15 @@
       <span class="section-pill pill-red" onclick="goToSection(4)">05 Special Civil Action Part 2</span>
     </div>
     <button class="start-btn" onclick="showTOC()">Browse all cases ›</button>
-    <p class="cover-authors">
-  Prepared By:<br>
+    </div>
+   <p class="cover-authors">
+  <span class="credit-label">Prepared By</span><br>
   <span class="credit-name">Rizaldy Nisperos</span>
-  &amp;
+  <span class="credit-separator">•</span>
   <span class="credit-name">Ethyl Mae Valdriz</span><br>
-  JD 2206 • Civil Procedure II • SY 2025–2026
+  <span class="credit-meta">
+    JD 2206 • Civil Procedure II • SY 2025–2026
+  </span>
 </p>
   </div>
 </div>
