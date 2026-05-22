@@ -264,7 +264,7 @@
     <h2 style="font-size:clamp(1.8rem,5vw,3rem);font-weight:900;color:var(--gold);line-height:1.2;margin-bottom:.3rem">MEMORIZES CASES,</h2>
     <h2 style="font-size:clamp(1.8rem,5vw,3rem);font-weight:900;color:var(--white);line-height:1.2;margin-bottom:2rem">BUT APPLIES DOCTRINES.</h2>
     <div style="width:60px;height:3px;background:var(--gold);margin:0 auto 1.5rem"></div>
-    <p style="font-size:.85rem;color:var(--gray);font-style:italic;margin-bottom:2.5rem"> -  Dean Felmanda D. Camat, LL.M.</p>
+    <p style="font-size:.85rem;color:var(--gray);font-style:italic;margin-bottom:2.5rem"> </p>
     <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2.5rem">
       <div><span style="font-size:2rem;font-weight:900;color:var(--gold);display:block">76</span><span style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray)">Cases</span></div>
       <div><span style="font-size:2rem;font-weight:900;color:var(--gold);display:block">5</span><span style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray)">Sections</span></div>
@@ -831,14 +831,14 @@ function buildDeck(){
   sc.classList.remove('active');
   document.getElementById('sc-sub-text').textContent=`You've reviewed all ${s.cases.length} cases in ${s.title}.`;
   const nextBtn=document.getElementById('sc-next-btn');
-  // ── FIX: last section now shows "View Closing Page ›" instead of hiding the button ──
+  // ── FIX: last section now shows "End ›" instead of hiding the button ──
   if(currentSectionIdx<SECTIONS.length-1){
     nextBtn.style.display='inline-block';
     nextBtn.textContent=`Next: ${SECTIONS[currentSectionIdx+1].title} ›`;
     nextBtn.onclick=nextSection;
   }else{
     nextBtn.style.display='inline-block';
-    nextBtn.textContent='View Closing Page ›';
+    nextBtn.textContent='End ›';
     nextBtn.onclick=showClosing;
   }
 }
