@@ -31,37 +31,11 @@
   .cover-title-sub{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1;color:var(--white);margin-bottom:2rem}
   .cover-divider{width:80px;height:4px;background:var(--gold);margin-bottom:1.5rem}
   .cover-desc{font-size:1rem;color:var(--gray);line-height:1.7;margin-bottom:2.5rem}
-  .cover-authors{
-  margin-top:3.2rem;
-  line-height:1.8;
-}
-
-.credit-label{
-  font-size:.72rem;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  color:var(--gray);
-}
-
-.credit-name{
-  font-size:.95rem;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--gold);
-  font-weight:700;
-}
-
-.credit-separator{
-  color:rgba(255,255,255,.35);
-  margin:0 .35rem;
-}
-
-.credit-meta{
-  font-size:.72rem;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--gray);
-}
+  .cover-authors{margin-top:3.2rem;line-height:1.8;}
+  .credit-label{font-size:.72rem;letter-spacing:4px;text-transform:uppercase;color:var(--gray);}
+  .credit-name{font-size:.95rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;}
+  .credit-separator{color:rgba(255,255,255,.35);margin:0 .35rem;}
+  .credit-meta{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);}
   .cover-stats{display:flex;gap:2rem;margin-bottom:3rem}
   .cover-stat-num{font-size:2.5rem;font-weight:900;color:var(--gold);display:block}
   .cover-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
@@ -195,43 +169,13 @@
   .nav-home:hover{color:var(--white);border-color:var(--white)}
 
   @media(max-width:600px){
-   .cover-authors{
-  margin-top:2.4rem;
-  line-height:1.55;
-}
-
-.credit-label{
-  font-size:.58rem;
-  letter-spacing:2px;
-}
-
-.credit-name{
-  display:block;
-  font-size:.78rem;
-  letter-spacing:.8px;
-  line-height:1.45;
-  margin-top:.25rem;
-}
-
-.credit-separator{
-  display:none;
-}
-
-.credit-meta{
-  display:block;
-  margin-top:.7rem;
-  font-size:.58rem;
-  letter-spacing:1px;
-  line-height:1.5;
-}
-   
-   .cover-authors{
-  position:relative;
-  z-index:5;
-  max-width:220px;
-}
-
-} 
+   .cover-authors{margin-top:2.4rem;line-height:1.55;}
+   .credit-label{font-size:.58rem;letter-spacing:2px;}
+   .credit-name{display:block;font-size:.78rem;letter-spacing:.8px;line-height:1.45;margin-top:.25rem;}
+   .credit-separator{display:none;}
+   .credit-meta{display:block;margin-top:.7rem;font-size:.58rem;letter-spacing:1px;line-height:1.5;}
+   .cover-authors{position:relative;z-index:5;max-width:220px;}
+  }
 </style>
 </head>
 <body>
@@ -320,9 +264,8 @@
     <h2 style="font-size:clamp(1.8rem,5vw,3rem);font-weight:900;color:var(--gold);line-height:1.2;margin-bottom:.3rem">MEMORIZES CASES,</h2>
     <h2 style="font-size:clamp(1.8rem,5vw,3rem);font-weight:900;color:var(--white);line-height:1.2;margin-bottom:2rem">BUT APPLIES DOCTRINES.</h2>
     <div style="width:60px;height:3px;background:var(--gold);margin:0 auto 1.5rem"></div>
-    <p style="font-size:.85rem;color:var(--gray);font-style:italic;margin-bottom:2.5rem">— Dean Felmanda D. Camat, LL.M.</p>
+    <p style="font-size:.85rem;color:var(--gray);font-style:italic;margin-bottom:2.5rem"></p>
     <div style="display:flex;justify-content:center;gap:3rem;margin-bottom:2.5rem">
-      <div><span style="font-size:2rem;font-weight:900;color:var(--gold);display:block">76</span><span style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray)">Cases</span></div>
       <div><span style="font-size:2rem;font-weight:900;color:var(--gold);display:block">5</span><span style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray)">Sections</span></div>
       <div><span style="font-size:2rem;font-weight:900;color:var(--gold);display:block">40–71</span><span style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray)">Rules</span></div>
     </div>
@@ -337,138 +280,118 @@ const LINK_ICON = `<svg width="12" height="12" viewBox="0 0 12 12" fill="none" x
 const SECTIONS=[
 {num:"01",title:"Appeals",subtitle:"Rules 40–45 & Rule 64",color:"teal",
 cases:[
-
-// CASE 1 — Neypes (unchanged, correct)
 {tag:"Rule 40–41",name:"Neypes v. Court of Appeals",gr:"G.R. No. 141524 | Sept. 14, 2005 (En Banc)",key:"THE FRESH PERIOD RULE",
 doctrine:"A party who timely files a Motion for Reconsideration or Motion for New Trial is entitled to a FRESH 15-day period from receipt of the order denying the motion within which to file a notice of appeal. The original remaining days of the appeal period are disregarded. This standardized rule applies to Rules 40, 41, 42, 43, and 45.",
 scope:"Applies: Rules 40, 41, 42, 43, 45. Does NOT apply to Rule 64 (COA/COMELEC — 30 days, strict) or administrative appeals. Filing a timely MR/MNT triggers the fresh period automatically.",
 bar:"Most tested appeal rule. Always ask: was an MR filed and denied? If yes → fresh 15 days from receipt of denial order, regardless of how many days remained.",
 link:"https://lawphil.net/judjuris/juri2005/sep2005/gr_141524_2005.html"},
 
-// CASE 2 — Spouses De Los Santos v. Mangubat (NEW — added as companion to Neypes)
 {tag:"Rule 41",name:"Spouses De Los Santos v. Vda. de Mangubat",gr:"G.R. No. 149508 | Oct. 10, 2007",key:"FRESH PERIOD RULE: STANDARDIZATION OF APPEAL PERIODS",
 doctrine:"The Supreme Court applied the Fresh Period Rule to standardize appeal periods and promote the orderly administration of justice. A timely Motion for Reconsideration entitles the movant to a fresh 15-day period from receipt of the denial order within which to file a notice of appeal — the remaining days of the original period are irrelevant. Procedural rules should serve, not defeat, substantial justice.",
 scope:"This case is a companion authority to Neypes, reaffirming that the Fresh Period Rule harmonizes appeal period computation across all courts and modes of appeal covered by Neypes. It reinforces that courts should not sacrifice substantial justice on the altar of technicality.",
 bar:"Cite alongside Neypes when the issue involves computation of appeal periods after a denied MR. Both cases stand for the rule: timely MR denied → fresh 15 days from denial → prior remaining period disregarded.",
 link:"https://lawphil.net/judjuris/juri2007/oct2007/gr_149508_2007.html"},
 
-// CASE 3 — Pahila-Garrido: CORRECTED doctrine (actual subject: injunction against execution of final ejectment judgment)
 {tag:"Rule 41 / Rule 58",name:"Pahila-Garrido v. Tortogo",gr:"G.R. No. 156358 | Aug. 17, 2011",key:"INJUNCTION CANNOT STAY EXECUTION OF A FINAL EJECTMENT JUDGMENT",
 doctrine:"A writ of preliminary injunction CANNOT be used to frustrate, suspend, or enjoin the enforcement of a final and executory judgment in an ejectment case. Once a judgment attains finality it becomes immutable and unalterable. Any remedy intended to prevent execution of a final judgment must be exercised with extreme caution and in strict observance of existing rules. A preliminary injunction granted by the RTC to stop execution of an MTC ejectment judgment is improper.",
 scope:"Final and executory judgments must be enforced without delay. Injunction is NOT the proper remedy to stop execution of a final ejectment judgment. The defendant's proper remedy to stay execution is: (1) supersedeas bond; AND (2) periodic deposits of current rentals — not an injunction from another court.",
 bar:"Do not confuse the proper remedy to stay ejectment execution (supersedeas bond + periodic deposits under Rule 70) with a preliminary injunction. Injunction against execution of a final judgment is improper and will be denied.",
 link:"https://lawphil.net/judjuris/juri2011/aug2011/gr_156358_2011.html"},
 
-// CASE 4 — FGU Insurance: CORRECTED doctrine (actual subject: mandamus to compel issuance of writ of execution; execution of final judgment is ministerial)
 {tag:"Rule 41 / Rule 65",name:"FGU Insurance Corp. v. RTC of Makati",gr:"G.R. No. 161282 | Feb. 23, 2011",key:"EXECUTION OF FINAL JUDGMENT IS A MINISTERIAL DUTY",
 doctrine:"Once a judgment becomes final and executory, its execution becomes a matter of RIGHT for the prevailing party and a MINISTERIAL DUTY of the court. The RTC's act of setting the case for hearing instead of immediately issuing a writ of execution — after the judgment had already become final — was improper. A final and executory judgment may no longer be modified in any respect and must be enforced through a writ of execution. Mandamus lies to compel the court to perform this ministerial duty.",
 scope:"Execution of a final judgment is ministerial — the court has no discretion to delay it absent a supervening event or other recognized exception. Setting a case for hearing after finality of judgment, without legal basis, is an improper act correctible by mandamus under Rule 65.",
 bar:"Final judgment + writ of execution = ministerial right of the prevailing party. The court cannot delay issuing the writ by scheduling baseless hearings. Mandamus lies to compel issuance when the court refuses without justification.",
 link:"https://lawphil.net/judjuris/juri2011/feb2011/gr_161282_2011.html"},
 
-// CASE 5 — DBP v. COA (unchanged, correct)
 {tag:"Rule 64",name:"DBP v. Commission on Audit",gr:"G.R. No. 247787 | Mar. 2, 2021",key:"COA DECISIONS: 30-DAY STRICT PERIOD",
 doctrine:"Decisions of the Commission on Audit are reviewable by the Supreme Court via certiorari under Rule 64. The 30-day period is jurisdictional and non-extendable. Non-compliance results in finality and immutability of the COA decision.",
 scope:"Rule 64 covers: COMELEC and COA ONLY. 30-day period is STRICT. Neypes fresh period rule does NOT apply to Rule 64. Not extendable unlike Rule 65.",
 bar:"Rule 64 = 30 days (strict). Rule 65 = 60 days (may be extended). Rule 64 is a special civil action for certiorari under Rule 65 but with 30 days substituted for 60.",
 link:"https://lawphil.net/judjuris/juri2021/mar2021/gr_247787_2021.html"},
 
-// CASE 6 — Salendab: CORRECTED — replaced with actual doctrine (MR not pro forma; tolls appeal period)
 {tag:"Rule 41",name:"Salendab v. Dela Peña",gr:"G.R. No. 217569 | May 5, 2021",key:"MR NOT PRO FORMA IF IT IDENTIFIES SPECIFIC ERRORS",
 doctrine:"A Motion for Reconsideration is NOT pro forma if it specifically points out the findings and conclusions of the court that are allegedly erroneous and contrary to law, and shows a bona fide effort to present additional matters or reiterate arguments in a different light. When such a motion is properly filed, it tolls the period to appeal, and the approval of a timely notice of appeal becomes a ministerial duty of the trial court.",
 scope:"A pro forma MR — one that merely rehashes arguments already considered — does NOT toll the appeal period and is treated as if no MR was filed. The test is whether the MR makes a genuine and substantive attempt to challenge the ruling by pointing to specific errors in the findings or conclusions.",
 bar:"Two-part check: (1) Does the MR specifically identify errors in the court's findings or conclusions? (2) Does it show a bona fide effort to raise new or different arguments? If YES to both → not pro forma → it tolls the appeal period.",
 link:"https://lawphil.net/judjuris/juri2021/may2021/gr_217569_2021.html"},
 
-// CASE 7 — Brual (unchanged, correct)
 {tag:"Rule 41",name:"Brual v. Contreras et al.",gr:"G.R. No. 205451 | Mar. 7, 2022",key:"PERIOD TO APPEAL IS MANDATORY AND JURISDICTIONAL",
 doctrine:"The period to appeal is mandatory and jurisdictional. Failure to perfect an appeal within the reglementary period renders the judgment final and executory, divesting the court of jurisdiction to modify or reverse it — the doctrine of IMMUTABILITY OF JUDGMENT.",
 scope:"Exceptions to immutability (narrow): correction of clerical errors; nunc pro tunc entries; void judgments; supervening events that render execution unjust. These are the ONLY exceptions.",
 bar:"No equitable consideration or meritorious defense can reopen a final judgment. The remedy for a lapsed appeal (if FAME is present) is a Petition for Relief from Judgment under Rule 38.",
 link:"https://lawphil.net/judjuris/juri2022/mar2022/gr_205451_2022.html"},
 
-// CASE 8 — Ross Systems (unchanged, correct)
-{tag:"Rule 43",name:"Ross Systems Int'l v. Global Medical Center",gr:"G.R. No. 230119 | May 11, 2021",key:"DISMISSAL WITHOUT PREJUDICE: FINAL BUT NOT ON MERITS",
-doctrine:"An order dismissing an action WITHOUT prejudice is a FINAL order for purposes of appeal — it completely terminates the proceedings in the dismissing court. However, it is NOT an adjudication on the merits, so res judicata does not attach. The proper remedy is appeal, not certiorari.",
-scope:"Dismissal without prejudice: appealable but no res judicata → can refile. Dismissal with prejudice: appealable AND bars refiling. Both are final orders for appeal purposes.",
-bar:"Don't confuse 'final' for appeal purposes with 'final' for res judicata. An order can be final enough to appeal but not final enough to bar refiling.",
-link:"https://lawphil.net/judjuris/juri2021/may2021/gr_230119_2021.html"},
+{tag:"Rule 43 / Rule 45 / CIAC",name:"Global Medical Center of Laguna, Inc. v. Ross Systems International, Inc.",gr:"G.R. Nos. 230112 &amp; 230119 | May 11, 2021 (En Banc)",key:"APPEAL FROM CIAC ARBITRAL AWARD: DIRECTLY TO SC VIA RULE 45 ON PURE QUESTIONS OF LAW",
+doctrine:"This landmark En Banc decision clarified and settled the correct mode and scope of judicial review of CIAC arbitral awards. A CIAC arbitral award is NOT appealable to the Court of Appeals via Rule 43. The proper and exclusive appellate remedy is a Petition for Review on Certiorari directly to the Supreme Court under Rule 45, raising only pure questions of law. This is in keeping with the original legislative intent of Executive Order No. 1008, which created the CIAC to ensure early and expeditious settlement of construction disputes, and which affords parties a direct recourse to the SC on questions of law only. The CA therefore had no jurisdiction to entertain a Rule 43 petition from a CIAC award, and any decision it renders in such a case is void for lack of jurisdiction.",
+scope:"Prior to this case, conflicting rulings allowed appeals from CIAC awards to go to the CA via Rule 43. This decision definitively ended that practice. The rule now is: CIAC award + pure question of law = Rule 45 directly to SC. Questions of fact in a CIAC award are final and not reviewable. The SC clarified the reach of judicial review over CIAC awards is narrow, consistent with the policy of empowering arbitration and limiting court interference in construction disputes.",
+bar:"Mode of appeal from CIAC: Rule 45 to SC only, on pure questions of law. NOT Rule 43 to CA. This is the most critical appellate rule for CIAC cases. A party who files a Rule 43 petition with the CA assailing a CIAC award files with the wrong court via the wrong mode, and the CA has no jurisdiction to act on it. Know this case as the landmark that settled the correct appellate pathway from CIAC awards.",
+link:"https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/1/67423"},
 
-// CASE 9 — Yatco (unchanged, correct)
 {tag:"Rule 43",name:"Yatco v. Office of the Deputy Ombudsman",gr:"G.R. No. 244775 | July 6, 2020",key:"RULE 43: OMBUDSMAN ADMINISTRATIVE DECISIONS",
 doctrine:"Decisions of the Ombudsman in ADMINISTRATIVE disciplinary cases are appealable to the Court of Appeals via Petition for Review under Rule 43 within 15 days. Ombudsman CRIMINAL case orders (probable cause, filing of Information) are reviewed via Rule 65 certiorari before the CA — NOT Rule 43.",
 scope:"Rule 43 covers quasi-judicial bodies in the list. Excluded: COMELEC (Rule 64), COA (Rule 64), NLRC (Rule 65 via St. Martin), Ombudsman criminal orders (Rule 65 to CA).",
 bar:"Ombudsman split: administrative → Rule 43 to CA. Criminal → Rule 65 to CA. Never directly to SC for either.",
 link:"https://lawphil.net/judjuris/juri2020/jul2020/gr_244775_2020.html"},
 
-// CASE 10 — East West Banking (unchanged, correct)
 {tag:"Rule 45",name:"East West Banking Corp. v. Cruz",gr:"G.R. No. 221641 | July 12, 2021",key:"RULE 45: ONLY QUESTIONS OF LAW",
 doctrine:"A Petition for Review on Certiorari under Rule 45 raises ONLY QUESTIONS OF LAW. The Supreme Court is not a trier of facts. When issues require re-examination of evidence or credibility of witnesses, the petition must be dismissed. The CA's factual findings, when supported by substantial evidence, are conclusive on the SC.",
 scope:"Question of law = doubt on what the law is on given undisputed facts. Question of fact = doubt on what the facts are (requires evidence evaluation). 10 exceptions recognized where SC may review facts.",
 bar:"Rule 45 = questions of law ONLY. A petition raising factual errors should be dismissed. Know the 10 exceptions (speculation, absurd inference, conflicting findings, grave misapprehension, etc.).",
 link:"https://lawphil.net/judjuris/juri2021/jul2021/gr_221641_2021.html"},
 
-// CASE 11 — B.R. Sebastian (unchanged, correct)
-{tag:"Rule 41",name:"B.R. Sebastian v. Court of Appeals",gr:"G.R. No. L-41862 | Feb. 7, 1992",key:"LIBERAL CONSTRUCTION OF NOTICE OF APPEAL",
-doctrine:"A notice of appeal that substantially complies with the requirements of Rule 41 is sufficient even if it does not strictly follow every technical formal requirement, provided it is filed within the reglementary period. Courts should be liberal in construing formal requirements to serve the ends of justice.",
-scope:"Liberality applies to FORM only — NOT to PERIOD. The 15-day period remains mandatory and jurisdictional. No amount of liberality can save a late appeal.",
-bar:"Liberal construction saves defective form; it cannot save a late filing. Always distinguish between defects in form (curable) and defects in period (fatal).",
-link:"https://lawphil.net/judjuris/juri1992/feb1992/gr_l41862_1992.html"},
+{tag:"Rule 41 / Rule 65",name:"B.R. Sebastian Enterprises, Inc. v. Court of Appeals",gr:"G.R. No. L-41862 | Feb. 7, 1992",key:"NEGLIGENCE OF COUNSEL BINDS THE CLIENT; REINSTATEMENT OF DISMISSED APPEAL",
+doctrine:"A dismissed appeal will not be reinstated on the mere ground that the appellant was deprived of his right to appeal due to his counsel's negligence. The negligence and mistakes of counsel are binding on the client. The Court of Appeals did not gravely abuse its discretion in refusing to reinstate an appeal that had been dismissed for failure to file the Appellant's Brief, even where such failure resulted from the death of a senior partner and the subsequent disarray of the law firm. The party is bound by his counsel's negligence and cannot be heard to complain of it later.",
+scope:"The rule that negligence of counsel binds the client applies even if the negligence is attributable to the internal disorganization of a law firm after the death of a senior partner. The proper remedy in such a case is not reinstatement of the dismissed appeal but a petition for relief from judgment under Rule 38, showing fraud, accident, mistake, or excusable negligence.",
+bar:"Reinstatement of a dismissed appeal is not a matter of right. The petitioner must show that the dismissal was not due to his or his counsel's fault or negligence. Internal law firm disarray after a partner's death is NOT an excuse that binds the court to reinstate. Negligence of counsel equals negligence of client.",
+link:"https://lawphil.net/judjuris/juri1992/feb1992/gr_41862_1992.html"},
 
-// CASE 12 — BCDA (unchanged, correct)
-{tag:"Rule 43",name:"BCDA v. CIR",gr:"G.R. No. 205466 | Jan. 11, 2021",key:"WRONG MODE OF APPEAL IS FATAL",
-doctrine:"Adopting the wrong mode of appeal is a jurisdictional defect warranting outright dismissal. A party who appeals from a quasi-judicial body using a notice of appeal (Rule 41) instead of a Petition for Review (Rule 43) deprives the CA of jurisdiction over the appeal. There is generally no discretion to treat one mode as another.",
-scope:"Wrong mode = dismissal. The rule is strict. Each mode of appeal confers jurisdiction in a specific, non-interchangeable way.",
-bar:"Always identify: (1) which court rendered the decision; (2) in what capacity (original or appellate); (3) correct mode and correct court. Getting any one wrong = fatal.",
+{tag:"Rule 141 / Docket Fees",name:"Bases Conversion and Development Authority v. Commissioner of Internal Revenue",gr:"G.R. No. 205466 | Jan. 11, 2021",key:"BCDA IS A GOVERNMENT INSTRUMENTALITY EXEMPT FROM DOCKET FEES",
+doctrine:"The Bases Conversion and Development Authority (BCDA) is a government instrumentality vested with corporate powers under Republic Act No. 7227, and not a government-owned and controlled corporation (GOCC). As a government instrumentality, it is exempt from the payment of legal fees under Section 22, Rule 141 of the Rules of Court. The CTA therefore erred in dismissing BCDA's Petition for Review for non-payment of docket fees, since BCDA was exempt from such payment and non-payment could not deprive the CTA of jurisdiction.",
+scope:"Government instrumentality (not integrated in the department framework, vested with special functions, administering special funds, enjoying operational autonomy) = exempt from docket fees under Rule 141. GOCC = not exempt. The distinction between an instrumentality and a GOCC is controlled by the Administrative Code of 1987 definitions. BCDA is an instrumentality, not a GOCC, because it is not organized as a stock or non-stock corporation.",
+bar:"Key distinction: government instrumentality vs. GOCC. Instrumentality = exempt from legal fees. GOCC (with or without independent charter) = NOT exempt. Non-payment of docket fees by an exempt entity does NOT deprive the court of jurisdiction. The timely filing of the petition, not the payment, is what matters for jurisdiction purposes when the filer is exempt.",
 link:"https://lawphil.net/judjuris/juri2021/jan2021/gr_205466_2021.html"},
 
-// CASE 13 — CIR v. Standard Insurance (unchanged, correct)
 {tag:"Rule 45",name:"CIR v. Standard Insurance Co., Inc.",gr:"G.R. No. 219340 | Apr. 28, 2021",key:"QUESTION OF LAW vs. QUESTION OF FACT DEFINED",
 doctrine:"A question of LAW exists when the doubt concerns what the law is on a certain state of facts — no re-evaluation of evidence needed. A question of FACT exists when the doubt concerns the truth or falsity of alleged facts — requiring evaluation of evidence. Only questions of law are reviewable under Rule 45.",
 scope:"Mixed questions of law and fact — where the legal issue cannot be resolved without reviewing facts — are generally treated as questions of fact, not cognizable under Rule 45.",
 bar:"When a party says 'the court misappreciated the evidence' → question of fact → Rule 45 petition must be dismissed unless an exception applies.",
 link:"https://lawphil.net/judjuris/juri2021/apr2021/gr_219340_2021.html"},
 
-// CASE 14 — Sobrejuanite-Flores (unchanged, correct)
-{tag:"Rule 41",name:"Sobrejuanite-Flores v. Pilando, Jr.",gr:"G.R. No. 251816 | Nov. 23, 2021",key:"PERFECTION OF APPEAL AND LOSS OF JURISDICTION",
-doctrine:"Upon perfection of the appeal in due time and expiration of the time to appeal of other parties, the trial court loses jurisdiction over the case — both over the subject matter and the parties. Any subsequent order by the trial court affecting the merits is null and void for want of jurisdiction.",
-scope:"Residual jurisdiction (narrow): protection orders, appointment of receivers, execution pending appeal, correction of clerical errors. Does NOT include modifying or reversing the judgment.",
-bar:"After appeal is perfected, the trial court can still: (1) issue writ of execution pending appeal; (2) correct clerical errors; (3) issue protection orders. That's it.",
+{tag:"Rule 43 / Admin Law",name:"Sobrejuanite-Flores v. Commissioners of the PRC",gr:"G.R. No. 251816 | Nov. 23, 2021 (En Banc)",key:"VALIDITY OF IRR ADDING REQUIREMENTS NOT IN PARENT LAW; POLICE POWER OVER PROFESSIONS",
+doctrine:"An implementing rule or regulation (IRR) that adds a requirement not expressly stated in the parent statute is valid if it is reasonably necessary to carry out the purposes of the law and does not contravene the Constitution or the statute. The Professional Regulatory Board of Psychology's IRR requiring at least 100 hours of updating workshops and training programs as part of the 'professional education' requirement under Section 16(c) of R.A. No. 10029 is a valid exercise of delegated legislative power. The State may impose reasonable conditions on the registration of professionals without examination in the exercise of police power to protect public health and safety.",
+scope:"Exemption from licensure examination is an exception to the rule and must be strictly construed against the applicant. The applicant bears the burden of proving compliance with all requirements. A requirement added by the IRR does not violate equal protection if it rests on substantial distinctions germane to the purpose of the law and applies equally to all members of the same class.",
+bar:"IRR validity test: (1) issued by an authorized body; (2) within the scope of delegated authority; (3) not inconsistent with the Constitution or the law; (4) published and effective. An IRR adding details to operationalize a statutory requirement (such as specifying 100 hours for 'professional education') is generally valid. Equal protection is not violated by classifying exempt and non-exempt applicants differently.",
 link:"https://lawphil.net/judjuris/juri2021/nov2021/gr_251816_2021.html"},
 
-// CASE 15 — Pates v. COMELEC (unchanged, correct)
 {tag:"Rule 64",name:"Pates v. COMELEC",gr:"G.R. No. 184915 | June 30, 2009",key:"RULE 64: 30-DAY PERIOD IS STRICT",
 doctrine:"A petition under Rule 64 must be filed within 30 days from notice of the COMELEC or COA judgment. This 30-day period is STRICT, NON-EXTENDABLE, and jurisdictional. If an MR was filed, the 30-day period is counted from receipt of its denial. The Neypes Fresh Period Rule does NOT apply to Rule 64.",
 scope:"Rule 64 is a special civil action for certiorari under Rule 65 but the 60-day period is replaced by 30 days. The 30-day period cannot be extended. Non-compliance is fatal.",
 bar:"COMELEC/COA → SC via Rule 64. 30 days from notice or from denial of MR. Strict. Non-extendable. If you miss it, the decision becomes final regardless of its correctness.",
 link:"https://lawphil.net/judjuris/juri2009/jun2009/gr_184915_2009.html"},
 
-// CASE 16 — Municipality of Bakun (unchanged, correct)
-{tag:"Rule 40",name:"Municipality of Bakun v. Municipality of Sugpon",gr:"G.R. No. 241370 | Apr. 20, 2022",key:"SPECIAL PROCEEDINGS: RECORD ON APPEAL REQUIRED",
-doctrine:"Appeals in special proceedings and cases where multiple appeals are allowed require a RECORD ON APPEAL in addition to a notice of appeal, filed within 30 days from notice of judgment. A notice of appeal alone is insufficient in such cases.",
-scope:"The 30-day period with record on appeal applies only to cases where multiple appeals are allowed (special proceedings). Ordinary civil actions: notice of appeal only, 15 days.",
-bar:"Special proceedings (estate settlement, adoption, land registration under delegated jurisdiction) = 30 days + record on appeal. Ordinary civil action = 15 days + notice of appeal only.",
+{tag:"Rule 45 / Local Government",name:"Municipality of Bakun v. Municipality of Sugpon",gr:"G.R. No. 241370 | Apr. 20, 2022",key:"BOUNDARY DISPUTES BETWEEN MUNICIPALITIES: PREPONDERANCE OF EVIDENCE; RULE 45 LIMITS",
+doctrine:"In a boundary dispute between two municipalities, the quantum of evidence required is preponderance of evidence. The Court, in a petition under Rule 45, will not re-examine or reweigh the factual findings of the lower courts that are supported by substantial evidence. Public documents such as administrative maps, land classification maps, certifications from government agencies, school certifications, and election records are reliable and credible evidence in establishing territorial boundaries, and in the absence of proof of falsity, carry a presumption of regularity.",
+scope:"Rule 45 petitions raise only questions of law. Factual findings of the RTC and CA on the weight of evidence in a boundary dispute will not be disturbed absent a showing of any of the recognized exceptions. Old legislation that does not categorically fix the metes and bounds of specific municipalities cannot serve as the sole basis for asserting territorial claims.",
+bar:"Boundary disputes between LGUs are resolved by preponderance of evidence. Public documents (maps, certifications, DAR records, voter registrations) carry presumption of regularity. A Rule 45 petition that merely asks the SC to reweigh evidence will be dismissed because only questions of law are cognizable. Mere invocation of a Rule 45 exception without proof of its applicability will not suffice.",
 link:"https://lawphil.net/judjuris/juri2022/apr2022/gr_241370_2022.html"},
 
-// CASE 17 — A.M. 03-04-04-SC (unchanged, correct)
 {tag:"A.M. Orders",name:"A.M. 03-04-04-SC (Custody of Minors)",gr:"Section 19 | May 15, 2003",key:"MR AS PRECONDITION IN CUSTODY CASES",
 doctrine:"Under Section 19 of the Rule on Custody of Minors and Writ of Habeas Corpus, a Motion for Reconsideration is required as a precondition before the next remedy may be filed. The reglementary period for the next remedy begins only upon receipt of the order denying the MR.",
 scope:"This rule applies specifically to custody of minors cases. The MR precondition is jurisdictional. Filing the next remedy without first exhausting the MR requirement results in dismissal.",
 bar:"Special rules (family courts, custody, nullity of marriage) may require a mandatory MR before appeal. Always check whether the governing rule requires an MR as a precondition.",
 link:"https://lawphil.net/courts/supreme/am/am_03_04_04_sc_2003.html"},
 
-// CASE 18 — A.M. 02-11-11-SC (unchanged, correct)
 {tag:"A.M. Orders",name:"A.M. 02-11-11-SC (Nullity/Annulment)",gr:"Sections 17 & 20 | Mar. 15, 2003",key:"MR REQUIRED IN NULLITY/ANNULMENT CASES",
 doctrine:"Under Sections 17 and 20 of A.M. 02-11-11-SC, a Motion for Reconsideration of the trial court's decision in declaration of nullity or annulment of marriage is required as a precondition before appeal. The appellate period begins only from receipt of the denial of this mandatory MR.",
 scope:"Applies to: declaration of nullity, annulment of marriage, and legal separation cases. The MR is mandatory before appeal — not optional.",
 bar:"In nullity/annulment cases, skipping the MR and filing an appeal directly is fatal. The MR is jurisdictional. Combined with Neypes: fresh 15 days from the MR denial.",
 link:"https://lawphil.net/courts/supreme/am/am_02-11-10-sc_2003.html"},
 
-// CASE 19 — Roger Chin (unchanged, correct)
-{tag:"Rule 45",name:"Roger Chin v. Maersk-Filipinas Crewing",gr:"G.R. No. 247338 | Sept. 2, 2020",key:"FRESH PERIOD APPLIES FROM DENIAL OF MANDATORY MR",
-doctrine:"When a Motion for Reconsideration is required as a precondition to filing an appeal, the reglementary period begins to run only from receipt of the order DENYING the MR. Under the Neypes Fresh Period Rule, a fresh 15-day period is available from receipt of such denial.",
-scope:"This case applied Neypes to situations where MR is a mandatory prerequisite. The SC confirmed the fresh period applies in all judicial cases covered by Neypes including those where MR is jurisdictionally required before appeal.",
-bar:"Mandatory MR → denied → fresh 15 days begins from receipt of denial under Neypes. The original period before the MR is irrelevant.",
+{tag:"Rule 43 / Labor",name:"Roger V. Chin v. Maersk-Filipinas Crewing, Inc.",gr:"G.R. No. 247338 | Sept. 2, 2020",key:"APPEAL FROM VOLUNTARY ARBITRATOR: 15-DAY PERIOD UNDER RULE 43 FROM DENIAL OF MR",
+doctrine:"The correct period to appeal the decision of a Voluntary Arbitrator (VA) or Panel of Arbitrators to the Court of Appeals via a petition for review under Rule 43 is 15 days from notice or receipt of the VA's resolution denying the motion for reconsideration, pursuant to Section 4 of Rule 43. The 10-day period stated in Article 276 of the Labor Code is the period within which the aggrieved party may file a motion for reconsideration before the VA, not the period to appeal to the CA. An appeal filed one day late from the VA's decision is dismissible, but the period is properly reckoned from the denial of the MR, not from the original decision. The CA erred in computing the period from the original decision rather than from receipt of the denial of the MR.",
+scope:"Period to appeal from VA to CA: 15 days from receipt of denial of MR under Rule 43, Section 4. Period to file MR before VA: 10 days under Article 276, Labor Code. The motion for reconsideration is a condition precedent to the Rule 43 petition. The DOLE and NCMB were directed to amend their procedural guidelines to align with this rule.",
+bar:"VA decision appeal timeline: (1) File MR within 10 days from VA decision (Article 276, Labor Code); (2) After MR is denied, file Rule 43 petition before CA within 15 days from receipt of denial. Do NOT count the 15 days from the original VA decision. Missing the 15-day period from denial of MR is fatal to the appeal.",
 link:"https://lawphil.net/judjuris/juri2020/sep2020/gr_247338_2020.html"}
 ]},
 
@@ -519,8 +442,6 @@ link:"https://lawphil.net/judjuris/juri2015/aug2015/gr_174542_2015.html"}
 
 {num:"03",title:"Provisional Remedies",subtitle:"Rules 57–61 | Attachment · Injunction · Replevin · Support",color:"orange",
 cases:[
-
-// GMA Network: CORRECTED rule tag and doctrine (actual case: NTC regulatory power / quasi-judicial CDO denial)
 {tag:"Rule 65 / Quasi-Judicial",name:"GMA Network, Inc. v. NTC",gr:"G.R. No. 181789 | Feb. 3, 2016",key:"NTC REGULATORY POWER: NO GRAVE ABUSE IN DENYING CDO",
 doctrine:"The NTC did not gravely abuse its discretion in denying GMA Network's motion for a cease and desist order (CDO) against respondent cable companies. When a quasi-judicial body acts within its regulatory mandate and exercises its judgment on matters within its expertise, courts will not interfere absent a clear showing of grave abuse of discretion amounting to lack or excess of jurisdiction. The presumption of regularity in the performance of official duties applies to quasi-judicial bodies acting within their statutory authority.",
 scope:"Quasi-judicial bodies acting within their regulatory mandate enjoy a presumption of regularity. Courts do not substitute their judgment for that of specialized administrative agencies on matters within their technical expertise, unless grave abuse of discretion is clearly shown.",
@@ -668,8 +589,6 @@ link:"https://lawphil.net/judjuris/juri2000/aug2000/gr_137705_2000.html"}
 
 {num:"04",title:"Special Civil Actions — Part 1",subtitle:"Rules 62–65 | Interpleader · Declaratory Relief · Certiorari",color:"green",
 cases:[
-
-// Wack Wack: CORRECTED link (hyphen in URL)
 {tag:"Rule 62",name:"Wack Wack Golf & Country Club v. Lee Won",gr:"G.R. No. L-23851 | Mar. 26, 1976",key:"INTERPLEADER REQUIRES GENUINE NEUTRALITY",
 doctrine:"An action for interpleader will NOT lie when the plaintiff-stakeholder already knows which of the conflicting claimants has the superior right, or when the stakeholder has already incurred independent liability to one of them. The plaintiff must be GENUINELY UNCERTAIN and must truly claim NO INTEREST in the subject matter. A stakeholder who allowed judgment to be rendered against it and then seeks interpleader is barred — the action was filed inexcusably late.",
 scope:"Requirements: (1) Two or more conflicting claimants; (2) Same subject matter; (3) Plaintiff claims no interest; (4) Plaintiff exposed to double liability; (5) Filed BEFORE independent liability attaches. Deposit of subject matter with the court is mandatory.",
@@ -911,11 +830,15 @@ function buildDeck(){
   sc.classList.remove('active');
   document.getElementById('sc-sub-text').textContent=`You've reviewed all ${s.cases.length} cases in ${s.title}.`;
   const nextBtn=document.getElementById('sc-next-btn');
+  // ── FIX: last section now shows "View Closing Page ›" instead of hiding the button ──
   if(currentSectionIdx<SECTIONS.length-1){
     nextBtn.style.display='inline-block';
     nextBtn.textContent=`Next: ${SECTIONS[currentSectionIdx+1].title} ›`;
+    nextBtn.onclick=nextSection;
   }else{
-    nextBtn.style.display='none';
+    nextBtn.style.display='inline-block';
+    nextBtn.textContent='Next ›';
+    nextBtn.onclick=showClosing;
   }
 }
 function updateDeckUI(){
